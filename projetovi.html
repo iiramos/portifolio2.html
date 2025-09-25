@@ -11,7 +11,7 @@
   <style>
     /* Fundo geral do site */
     body {
-      background: linear-gradient(to right, #2193b0, #6dd5ed);
+      background: linear-gradient(to right, #11998e, #38ef7d);
       font-family: "Segoe UI", Arial, sans-serif;
     }
 
@@ -27,7 +27,7 @@
 
     /* Navbar */
     .navbar {
-      background: #1E90FF !important;
+      background: #17a589 !important;
     }
 
     .navbar .nav-link {
@@ -38,17 +38,22 @@
     /* Rodapé */
     footer {
       margin-top: 40px;
-      background: #4682B4;
+      background: #138d75;
       color: white;
     }
 
     footer a {
-      color: #B0E0E6;
+      color: #76d7c4;
       text-decoration: none;
     }
 
-    .text-primary-custom {
-      color: #1E90FF;
+    .text-accent {
+      color: #138d75;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
     }
   </style>
 </head>
@@ -75,16 +80,16 @@
   <!-- Hero -->
   <header class="text-center">
     <div class="container">
-      <h1 class="display-4 fw-bold text-primary-custom">Voleibol</h1>
+      <h1 class="display-4 fw-bold text-accent">Voleibol</h1>
       <p class="lead">Energia, trabalho em equipe e emoção dentro das quadras e nas areias.</p>
-      <a href="#regras" class="btn btn-primary btn-lg">Começar</a>
+      <a href="#regras" class="btn btn-accent btn-lg" style="background:#17a589; color:white;">Começar</a>
     </div>
   </header>
 
   <!-- Regras -->
   <section id="regras">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4 text-primary-custom">📌 Principais Regras</h2>
+      <h2 class="fw-bold text-center mb-4 text-accent">📌 Principais Regras</h2>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Cada equipe joga com <strong>6 jogadores</strong> em quadra.</li>
         <li class="list-group-item">O objetivo é fazer a bola tocar no chão do adversário.</li>
@@ -98,36 +103,30 @@
   <!-- Posições -->
   <section id="posicoes">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4 text-primary-custom">👥 Posições dos Jogadores</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card p-3 shadow-sm">
+      <h2 class="fw-bold text-center mb-4 text-accent">👥 Posições dos Jogadores</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm text-center h-100">
             <h5>🏐 Levantador</h5>
             <p>Responsável por organizar as jogadas e distribuir os ataques. É o "cérebro" da equipe.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card p-3 shadow-sm">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm text-center h-100">
             <h5>💥 Oposto</h5>
             <p>Principal atacante, posicionado na saída de rede. Forte no ataque e no bloqueio.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card p-3 shadow-sm">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm text-center h-100">
             <h5>🔰 Ponteiro</h5>
             <p>Ataca pelas pontas e auxilia na recepção. Jogador versátil e completo.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card p-3 shadow-sm">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm text-center h-100">
             <h5>🛡️ Líbero</h5>
             <p>Especialista em defesa e recepção. Não pode atacar nem sacar.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mx-auto">
-          <div class="card p-3 shadow-sm text-center">
-            <h5>🧱 Central (Meio de Rede)</h5>
-            <p>Responsável por fechar o bloqueio pelo centro da rede e executar ataques rápidos.</p>
           </div>
         </div>
       </div>
@@ -137,7 +136,7 @@
   <!-- Brasil -->
   <section id="brasil">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4 text-primary-custom">🇧🇷 Voleibol no Brasil</h2>
+      <h2 class="fw-bold text-center mb-4 text-accent">🇧🇷 Voleibol no Brasil</h2>
       <p>O Brasil é uma das maiores potências mundiais do voleibol. Conquistou diversos títulos em Jogos Olímpicos,
         Campeonatos Mundiais e Ligas das Nações.</p>
       <div class="row g-4">
@@ -186,4 +185,3 @@
 </body>
 
 </html>
-
