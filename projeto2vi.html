@@ -11,11 +11,13 @@
     <style>
         /* Fundo geral do site */
         body {
-            background: linear-gradient(to right, #1e90ff, #00bfff);
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         /* Seções em destaque (caixa branca sobre o fundo colorido) */
-        section, header {
+        section,
+        header {
             background: white;
             border-radius: 15px;
             padding: 30px;
@@ -23,9 +25,34 @@
             box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
         }
 
-        /* Ajuste no rodapé */
+        /* Navbar */
+        .navbar {
+            background: #17a589 !important;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        /* Rodapé */
         footer {
             margin-top: 30px;
+            background: #138d75;
+        }
+
+        footer a {
+            color: #76d7c4;
+            text-decoration: none;
+        }
+
+        .text-accent {
+            color: #138d75;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
         }
     </style>
 </head>
@@ -33,7 +60,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">🏐 Voleibol</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -42,7 +69,6 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#regras">Regras</a></li>
                     <li class="nav-item"><a class="nav-link" href="#jogadores">Jogadores</a></li>
                 </ul>
             </div>
@@ -52,67 +78,56 @@
     <!-- Hero -->
     <header class="text-center">
         <div class="container">
-            <h1 class="display-4 fw-bold">Voleibol</h1>
-            <p class="lead">Um dos esportes mais populares do mundo, cheio de energia e trabalho em equipe.</p>
-            <a href="#historia" class="btn btn-primary btn-lg">Saiba Mais</a>
+            <h1 class="display-4 fw-bold text-accent">Voleibol</h1>
+            <p class="lead">Um dos esportes mais populares do mundo, cheio de energia, estratégia e trabalho em equipe.</p>
+            <a href="#historia" class="btn" style="background:#17a589; color:white;">Saiba Mais</a>
         </div>
     </header>
 
     <!-- História -->
     <section id="historia">
         <div class="container">
-            <h2 class="fw-bold text-center mb-4">História do Voleibol</h2>
-            <p class="text-center">O voleibol foi criado em 1895 por William G. Morgan nos Estados Unidos. 
-                Ao longo do tempo, tornou-se um dos esportes mais praticados em todo o mundo, com versões em quadra, praia e até adaptadas.</p>
-        </div>
-    </section>
-
-    <!-- Regras -->
-    <section id="regras">
-        <div class="container">
-            <h2 class="fw-bold text-center mb-4">Principais Regras</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cada equipe joga com 6 jogadores em quadra.</li>
-                <li class="list-group-item">O objetivo é passar a bola por cima da rede e fazê-la cair na quadra adversária.</li>
-                <li class="list-group-item">Cada time pode dar até 3 toques na bola antes de devolvê-la.</li>
-                <li class="list-group-item">A partida é disputada em sets de 25 pontos (melhor de 5).</li>
-            </ul>
+            <h2 class="fw-bold text-center mb-4 text-accent">História do Voleibol</h2>
+            <p>O voleibol foi criado em 1895 por William G. Morgan nos Estados Unidos como uma alternativa menos física que o basquete. 
+                Rapidamente se espalhou pelo mundo, chegando à Europa e América do Sul no início do século XX. 
+                No Brasil, o voleibol ganhou popularidade a partir da década de 1930, inicialmente nas escolas e clubes, evoluindo para competições nacionais e internacionais. 
+                Hoje, o país é reconhecido mundialmente como uma potência no esporte, tanto na modalidade de quadra quanto de praia, com grandes conquistas em Jogos Olímpicos, Campeonatos Mundiais e Ligas das Nações.
+                Além disso, o voleibol feminino brasileiro também se destaca, com jogadoras que se tornaram referência mundial, inspirando jovens em todo o país a praticarem o esporte.</p>
         </div>
     </section>
 
     <!-- Jogadores em Destaque -->
     <section id="jogadores">
         <div class="container">
-            <h2 class="fw-bold text-center mb-4">irmãos do volei</h2>
-            <div class="row g-4">
+            <h2 class="fw-bold text-center mb-4 text-accent">Jogadores de Destaque</h2>
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2025/06/27/427782373-nikolov-0z2px0-610x400.jpeg" 
-                             class="card-img-top img-fluid" alt="Aleksandar e Simeon Nikolov">
+                    <div class="card shadow-sm text-center h-100">
+                        <img src="https://s2-ge.glbimg.com/H09Y9RPj5_Ty7Y7rlqM0u9Pi4Dg=/1450x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/A/p/idOmIWSeenP7udZ49zdQ/thaisa-brasilia.jpg" 
+                             class="card-img-top img-fluid" alt="Thaísa">
                         <div class="card-body">
-                            <h5 class="card-title">Aleksandar e Simeon Nikolov</h5>
-                            <p class="card-text">Jogadores de destaque no voleibol masculino da Bulgária. Aleksandar (ponteiro) e Simeon (levantador) brilham na seleção e na Liga das Nações.</p>
+                            <h5 class="card-title">Thaísa</h5>
+                            <p class="card-text">Atua como meio-de-rede, como Central, talentosa e já ganhou 2 medalinhas olimpicas.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/UQUAS4FGA5DK3NBE6DIS6MNYAE.jpeg" 
-                             class="card-img-top img-fluid" alt="Julia e Lukas Bergmann">
+                    <div class="card shadow-sm text-center h-100">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/2022-09-17_Deutschland_gegen_Brasilien_%28Volleyball-Freundschaftsspiel_der_Frauen%29_by_Sandro_Halank%E2%80%93074.jpg" 
+                             class="card-img-top img-fluid" alt="Julia Gústie">
                         <div class="card-body">
-                            <h5 class="card-title">Julia e Lukas Bergmann</h5>
-                            <p class="card-text">Irmãos brasileiros, nascidos na Alemanha, jogam nas seleções feminina e masculina. Ambos já estrearam em Jogos Olímpicos representando o Brasil.</p>
+                            <h5 class="card-title">Júlia Kudiess</h5>
+                            <p class="card-text">Joga na posição de central no voleibol,talentosa da seleção feminina, destaque pela precisão nos ataques e habilidades defensivas.</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAFtT9gBfUqIkwC83-LjL9S-Xh_Vu0keCpA&s" 
-                             class="card-img-top img-fluid" alt="Darlan e Alan">
+                    <div class="card shadow-sm text-center h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8xOGAsfNszxhjqBhf-VWxpGYKbFcLKktzMg&s" 
+                             class="card-img-top img-fluid" alt="Ana Cristina">
                         <div class="card-body">
-                            <h5 class="card-title">Darlan e Alan</h5>
-                            <p class="card-text">Irmãos brasileiros, ambos opostos da seleção masculina. Conhecidos pela força no ataque e pela parceria dentro e fora da quadra.</p>
+                            <h5 class="card-title">Ana Cristina</h5>
+                            <p class="card-text">A ponteira de 21 anos - e que já é duas vezes medalhista olímpica.</p>
                         </div>
                     </div>
                 </div>
@@ -121,15 +136,9 @@
     </section>
 
     <!-- Rodapé -->
-    <footer class="bg-primary text-white text-center py-3">
-        <p class="mb-0">🏐 Site sobre Voleibol - Feito por Isabelle Ramos</p>
+    <footer class="text-white text-center py-3">
+        <p class="mb-0">🏐 Site sobre Voleibol - Feito por Vitoria melo</p>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
