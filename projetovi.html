@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voleibol</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    /* Fundo geral do site */
+    body {
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    /* Seções em destaque */
+    section,
+    header {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      margin: 30px auto;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #d62828 !important;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+
+    /* Rodapé */
+    footer {
+      margin-top: 40px;
+      background: #d62828;
+      color: white;
+    }
+
+    footer a {
+      color: #ffd166;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">🏐 Voleibol</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="#regras">Regras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#posicoes">Posições</a></li>
+          <li class="nav-item"><a class="nav-link" href="#variacoes">Variações</a></li>
+          <li class="nav-item"><a class="nav-link" href="#brasil">Brasil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-danger">Voleibol</h1>
+      <p class="lead">Energia, trabalho em equipe e emoção dentro das quadras e nas areias.</p>
+      <a href="#historia" class="btn btn-danger btn-lg">Começar</a>
+    </div>
+  </header>
+
+  <!-- História -->
+  <section id="historia">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 text-danger">📖 História do Voleibol</h2>
+      <p>O voleibol foi criado em <strong>1895</strong> por <strong>William G. Morgan</strong>, nos Estados Unidos.
+        Originalmente chamado de <em>mintonette</em>, foi pensado como uma atividade física mais leve que o basquetebol.
+        Em pouco tempo, ganhou popularidade e novas regras até se tornar o esporte que conhecemos hoje.</p>
+      <p>O voleibol é <strong>modalidade olímpica</strong> desde <strong>1964</strong>, em Tóquio, e atualmente é um dos
+        esportes mais praticados no mundo, com milhões de atletas em quadras, praias e até versões adaptadas.</p>
+    </div>
+  </section>
+
+  <!-- Regras -->
+  <section id="regras">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 text-danger">📌 Principais Regras</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cada equipe joga com <strong>6 jogadores</strong> em quadra.</li>
+        <li class="list-group-item">O objetivo é fazer a bola tocar no chão do adversário.</li>
+        <li class="list-group-item">Cada time pode dar até <strong>3 toques</strong> na bola antes de devolvê-la.</li>
+        <li class="list-group-item">O jogo é disputado em <strong>sets de 25 pontos</strong> (melhor de 5).</li>
+        <li class="list-group-item">A altura da rede é de 2,43m (masculino) e 2,24m (feminino).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Posições -->
+  <section id="posicoes">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 text-danger">👥 Posições dos Jogadores</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm">
+            <h5>🏐 Levantador</h5>
+            <p>Responsável por organizar as jogadas e distribuir os ataques. É o "cérebro" da equipe.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm">
+            <h5>💥 Oposto</h5>
+            <p>Principal atacante, posicionado na saída de rede. Forte no ataque e no bloqueio.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm">
+            <h5>🔰 Ponteiro</h5>
+            <p>Ataca pelas pontas e auxilia na recepção. Jogador versátil e completo.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm">
+            <h5>🛡️ Líbero</h5>
+            <p>Especialista em defesa e recepção. Não pode atacar nem sacar.</p>
+          </div>
+        < <div class="row justify-content-center">
+  <div class="col-md-4">
+    <div class="card p-3 shadow-sm h-100 text-center">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm h-100">
+            <h5>🧱 Central (Meio de Rede)</h5>
+            <p>Responsável por fechar o bloqueio pelo centro da rede e executar ataques rápidos.</p>
+          </div>
+        </div>
+  </section>
+
+  <!-- Variações -->
+  <section id="variacoes">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 text-danger">🌍 Variações do Voleibol</h2>
+      <p class="text-center">O esporte tem diferentes formas de prática:</p>
+      <ul class="list-group list-group-numbered">
+        <li class="list-group-item">Voleibol de quadra</li>
+        <li class="list-group-item">Vôlei de praia</li>
+        <li class="list-group-item">Voleibol sentado (paralímpico)</li>
+        <li class="list-group-item">Mini-vôlei (educacional)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Brasil -->
+  <section id="brasil">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 text-danger">🇧🇷 Voleibol no Brasil</h2>
+      <p>O Brasil é uma das maiores potências mundiais do voleibol. Conquistou diversos títulos em Jogos Olímpicos,
+        Campeonatos Mundiais e Ligas das Nações.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://www.dialethoseventos.com.br/assets-custom/img/palestrantes/giba-volei-28042023-105144.jpg"
+              class="card-img-top img-fluid" alt="Giba">
+            <div class="card-body">
+              <h5 class="card-title">🏐 Giba</h5>
+              <p class="card-text">Um dos maiores jogadores da história, símbolo da seleção masculina.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://s2-ge.glbimg.com/H09Y9RPj5_Ty7Y7rlqM0u9Pi4Dg=/1450x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/A/p/idOmIWSeenP7udZ49zdQ/thaisa-brasilia.jpg"
+              class="card-img-top img-fluid" alt="Sheilla Castro">
+            <div class="card-body">
+              <h5 class="card-title">✨Thaisa </h5>
+              <p class="card-text">Destaque da seleção feminina, Cinco ouros em oito finais de Grand Prix, duas medalhas em Mundiais (prata em 2010, bronze em 2014)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://imagenes.elpais.com/resizer/v2/WI2ACBIE4UTPW6PDCAUJJTWWLE.jpg?auth=3b3489216f1ce72b458a0d3141badcd654b82ba4264defc27218fb168b0ece6c&width=1960&height=1470&smart=true"
+              class="card-img-top img-fluid" alt="Serginho">
+            <div class="card-body">
+              <h5 class="card-title">🛡️ Serginho</h5>
+              <p class="card-text">O maior líbero da história, referência mundial em defesa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curiosidades -->
+  <section id="curiosidades">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 text-danger">💡 Curiosidades</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">O saque viagem é considerado um dos mais difíceis de defender.</li>
+        <li class="list-group-item">O Brasil é o único país campeão olímpico no vôlei de quadra e praia (masculino e
+          feminino).</li>
+        <li class="list-group-item">O voleibol sentado é praticado em quadras menores e com a rede mais baixa.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-4">
+    <p class="mb-1">🏐 Site sobre Voleibol - Desenvolvido por Isabelle Ramos</p>
+    <p class="small">Fontes: FIVB, COB</p>
+    <p><a href="#inicio">⬆️ Voltar ao topo</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
