@@ -11,7 +11,7 @@
   <style>
     /* Fundo geral do site */
     body {
-      background: linear-gradient(to right, #ff6a00, #ee0979);
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
       font-family: "Segoe UI", Arial, sans-serif;
     }
 
@@ -27,7 +27,7 @@
 
     /* Navbar */
     .navbar {
-      background: #DCDCDC !important;
+      background: #1E90FF !important;
     }
 
     .navbar .nav-link {
@@ -38,13 +38,17 @@
     /* Rodapé */
     footer {
       margin-top: 40px;
-      background:#B0C4DE;
+      background: #4682B4;
       color: white;
     }
 
     footer a {
-      color: #6495ED;
+      color: #B0E0E6;
       text-decoration: none;
+    }
+
+    .text-primary-custom {
+      color: #1E90FF;
     }
   </style>
 </head>
@@ -59,7 +63,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto"
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#regras">Regras</a></li>
           <li class="nav-item"><a class="nav-link" href="#posicoes">Posições</a></li>
           <li class="nav-item"><a class="nav-link" href="#brasil">Brasil</a></li>
@@ -71,17 +75,16 @@
   <!-- Hero -->
   <header class="text-center">
     <div class="container">
-      <h1 class="display-4 fw-bold text-danger">Voleibol</h1>
+      <h1 class="display-4 fw-bold text-primary-custom">Voleibol</h1>
       <p class="lead">Energia, trabalho em equipe e emoção dentro das quadras e nas areias.</p>
-      <a href="#historia" class="btn btn-danger btn-lg">Começar</a>
+      <a href="#regras" class="btn btn-primary btn-lg">Começar</a>
     </div>
   </header>
- 
 
   <!-- Regras -->
   <section id="regras">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4 text-danger">📌 Principais Regras</h2>
+      <h2 class="fw-bold text-center mb-4 text-primary-custom">📌 Principais Regras</h2>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Cada equipe joga com <strong>6 jogadores</strong> em quadra.</li>
         <li class="list-group-item">O objetivo é fazer a bola tocar no chão do adversário.</li>
@@ -95,7 +98,7 @@
   <!-- Posições -->
   <section id="posicoes">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4 text-danger">👥 Posições dos Jogadores</h2>
+      <h2 class="fw-bold text-center mb-4 text-primary-custom">👥 Posições dos Jogadores</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <div class="card p-3 shadow-sm">
@@ -120,15 +123,21 @@
             <h5>🛡️ Líbero</h5>
             <p>Especialista em defesa e recepção. Não pode atacar nem sacar.</p>
           </div>
-        < <div class="row justify-content-center">
-  <div class="col-md-4">
         </div>
+        <div class="col-md-4 mx-auto">
+          <div class="card p-3 shadow-sm text-center">
+            <h5>🧱 Central (Meio de Rede)</h5>
+            <p>Responsável por fechar o bloqueio pelo centro da rede e executar ataques rápidos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Brasil -->
   <section id="brasil">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4 text-danger">🇧🇷 Voleibol no Brasil</h2>
+      <h2 class="fw-bold text-center mb-4 text-primary-custom">🇧🇷 Voleibol no Brasil</h2>
       <p>O Brasil é uma das maiores potências mundiais do voleibol. Conquistou diversos títulos em Jogos Olímpicos,
         Campeonatos Mundiais e Ligas das Nações.</p>
       <div class="row g-4">
@@ -145,9 +154,10 @@
         <div class="col-md-4">
           <div class="card shadow-sm">
             <img src="https://s2-marieclaire.glbimg.com/2_4zUawKhhFjLbWq8JhEnpxhwhY=/0x0:720x480/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_51f0194726ca4cae994c33379977582d/internal_photos/bs/2024/E/B/M5scRnTxe5GxCOSj4qCA/marinaflosskelljustgbi.jpg"
+              class="card-img-top img-fluid" alt="Gabi">
             <div class="card-body">
-              <h5 class="card-title">✨Gabi </h5>
-              <p class="card-text">Destaque da seleção feminina,capitã da seleção  e uma ponteira talentosa</p>
+              <h5 class="card-title">✨Gabi</h5>
+              <p class="card-text">Destaque da seleção feminina, capitã e uma ponteira talentosa.</p>
             </div>
           </div>
         </div>
@@ -165,15 +175,15 @@
     </div>
   </section>
 
-
   <!-- Rodapé -->
   <footer class="text-center py-4">
     <p class="mb-1">🏐 Site sobre Voleibol - Desenvolvido por Vitoria Melo</p>
     <p class="small">Fontes: FIVB, COB</p>
     <p><a href="#inicio">⬆️ Voltar ao topo</a></p>
- </footer>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
